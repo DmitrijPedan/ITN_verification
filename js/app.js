@@ -23,8 +23,9 @@ const check = (inp) => {
     return res;
 }
 
-a = getUserInput();
-cl(check(a));
+const bigFunction = () => check(getUserInput()) ? alert('Good') : alert ('Bad');
+
+bigFunction();
 
 // c = 240;
 // s = c % 10
