@@ -11,5 +11,23 @@ const getUserInput = () => {
     return res;
 };
 
-cl(getUserInput());
+
+const check = (inp) => {
+    let x = [-1,5,7,9,4,6,10,5,7,0];
+    let summ = 0;
+    let res;
+    for(let i = 0; i < inp.length; i++) {
+        summ += inp[i]*x[i];    
+    }
+    ((summ % 11) % 10) == inp[9] ? res = true : res = false;
+    return res;
+}
+
+a = getUserInput();
+cl(check(a));
+
+// c = 240;
+// s = c % 10
+// k = (c % 11) % 10 ;
+// cl(k);
 
