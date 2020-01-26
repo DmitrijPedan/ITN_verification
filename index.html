@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ITN Verification</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
+    <div class="container">
+        <div class="row main-row">
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    Проверка кода ИНН согласно следующего алгоритма: <a href="https://uk.wikipedia.org/wiki/%D0%86%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D1%96%D0%BA%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B8%D0%B9_%D0%BD%D0%BE%D0%BC%D0%B5%D1%80_%D1%84%D1%96%D0%B7%D0%B8%D1%87%D0%BD%D0%BE%D1%97_%D0%BE%D1%81%D0%BE%D0%B1%D0%B8">
+                    Википедия</a>
+                  </div>
+            </div>
+        </div>
+        <div class="row input-row">
+            <div class="col">
+                <label for="form-control">Введите 10-значный код ИНН:</label>
+                <input type="number" class="form-control" placeholder="ИНН" id="inn-input">
+                <div class="btn-wrapper">
+                    <button type="button" class="btn btn-primary" id="checkBtn">Проверить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row output-row">
+            <div class="col" id="app">
+
+            </div>
+        </div>
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
